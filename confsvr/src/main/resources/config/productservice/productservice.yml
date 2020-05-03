@@ -1,0 +1,2 @@
+example.property: "Globomart example property"
+spring.jpa.show-sql: "true"

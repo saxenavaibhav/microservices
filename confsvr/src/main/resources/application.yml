@@ -1,0 +1,16 @@
+####
+#This is done to demonstrate the capabilities for the configuration server
+#Classpath and file-based solution for reading configuration. 
+#In actual production systems, this could be read from a GITHUB repository.
+####
+
+server:
+   port: 8888
+spring:
+  profiles:
+    active: native
+  cloud:
+     config:
+       server:
+           native:
+              searchLocations: classpath:config/,classpath:config/productservice
